@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+    db:
+        image: mysql:8
+        container_name: mysql_db
+        environment:
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+            MYSQL_DATABASE: ${DB_NAME}
+            MYSQL_PASSWORD: ${DB_PASSWORD}
+        ports:
+            - '3307:3306'
+        volumes:
+            - db_data:/var/lib/mysql
+
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: node_app
+        ports:
+            - '3000:3000'
+        depends_on:
+            - db
+        environment:
+            DB_HOST: ${DB_HOST}
+            DB_USER: ${DB_USER}
+            DB_PASSWORD: ${DB_PASSWORD}
+            DB_NAME: ${DB_NAME}
+            PORT: ${PORT}
+            SECRET_KEY: ${SECRET_KEY}
+            JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET}
+            USER: ${USER}
+            PASS: ${PASS}
+            HOST: ${HOST}
+            PORT_2: ${PORT_2}
+        volumes:
+            - ./railway:/usr/src/app
+        command: npm start
+
+volumes:
+    db_data:

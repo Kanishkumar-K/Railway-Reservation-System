@@ -1,0 +1,43 @@
+2024-08-26T10:29:07.676Z [error]: Train with this number already exists
+2024-08-26T10:29:07.689Z [error]: Error: Train with this number already exists
+    at Object.createTrain (C:\Users\karun\railway\src\services\trainService.js:42:27)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.<anonymous> (C:\Users\karun\railway\src\services\trainService.test.js:73:13)
+2024-08-26T10:29:34.935Z [error]: Train with this number already exists
+2024-08-26T10:29:34.946Z [error]: Error: Train with this number already exists
+    at Object.createTrain (C:\Users\karun\railway\src\services\trainService.js:42:27)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.<anonymous> (C:\Users\karun\railway\src\services\trainService.test.js:73:13)
+2024-08-26T10:31:40.040Z [error]: Train with this number already exists
+2024-08-26T10:31:40.060Z [error]: Error: Train with this number already exists
+    at Object.createTrain (C:\Users\karun\railway\src\services\trainService.js:42:27)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.<anonymous> (C:\Users\karun\railway\src\services\trainService.test.js:74:13)
+2024-08-26T10:32:51.149Z [error]: Train with this number already exists
+2024-08-26T10:32:51.160Z [error]: Error: Train with this number already exists
+    at Object.createTrain (C:\Users\karun\railway\src\services\trainService.js:42:27)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Object.<anonymous> (C:\Users\karun\railway\src\services\trainService.test.js:76:13)
+2024-08-26T10:33:41.493Z [error]: Train with this number already exists
+2024-08-28T14:10:35.874Z [error]: SequelizeConnectionError: connect ETIMEDOUT
+    at ConnectionManager.connect (C:\Users\karun\railway\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (C:\Users\karun\railway\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async C:\Users\karun\railway\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+    at async ConnectionManager.getConnection (C:\Users\karun\railway\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:197:7)
+    at async C:\Users\karun\railway\node_modules\sequelize\lib\sequelize.js:305:26
+    at async Sequelize.authenticate (C:\Users\karun\railway\node_modules\sequelize\lib\sequelize.js:457:5)
+2024-08-29T05:01:05.813Z [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1898:16)
+    at listenInCluster (node:net:1946:12)
+    at Server.listen (node:net:2044:7)
+    at Function.listen (C:\Users\karun\railway\node_modules\express\lib\application.js:635:24)
+    at C:\Users\karun\railway\src\app.js:58:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-08-29T05:41:47.986Z [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1898:16)
+    at listenInCluster (node:net:1946:12)
+    at Server.listen (node:net:2044:7)
+    at Function.listen (C:\Users\karun\railway\node_modules\express\lib\application.js:635:24)
+    at C:\Users\karun\railway\src\app.js:58:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
